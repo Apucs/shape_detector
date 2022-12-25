@@ -48,5 +48,5 @@ Details about the folders and files:
 
 __Resultant image from our algorithm:__
 
-![Pear shaped face](.\output\result_B1.png)
+![Pear shaped face](./output/result_B1.png)
 
