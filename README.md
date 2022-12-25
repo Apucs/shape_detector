@@ -24,6 +24,8 @@ Details about the folders and files:
  >
  > - **detect_face_shape.py**: By placing all the images in our `test_images` folder, this script analyze all the images and save the output in `output` folder.
  > - **detect_face_shape_single.py**: Given a single image from our `test_images` folder, this script analyze that particular image and save the output in `output` folder.
+ 
+ > - **shape_predictor_68_face_landmarks.dat**: Our shape predictor data file with which we will locate the landmarks by given a face.
 
 >
 ### __Instructions:__
