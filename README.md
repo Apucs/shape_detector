@@ -1,25 +1,52 @@
-* FaceShape *
+# Facial Shape Detection
 
-The project determines the face shape. (oval/rectangular/oblong/square/round/diamond/triangle )
+## __Introduction:__  
 
-Face shape helps you to decide hairstyle scientifically.
-
-* Procedure to run this program: *
-1. locate the haarcascade file, dlib .dat file in the repository.
-2. place the image file( face photo) in the same repository.
-3. run the program
+   In the Project, we are about to perform facial shape detection with **mediapipe** python.
 
 
-![original and final image](https://github.com/rajendra7406/FaceShape/blob/master/results.png)
+## __Project Description__
 
-This face shape is square 
+Root directory of this project contains:
+>
+> - **2 sub-folders**
+> - **several [.py] files**
+> - **1 text files containing all the requirements of this project**
+> - **1 readme.md file containing all the necessary instructions.**
+> - **Some test image examples in `test_images` folder**
 
-1. Line1 shows forehead length
-2. Line2 shows face width
-3. Line3 shows jawline length
-4. Line4 shows face length
+Details about the folders and files:
+ >
+ > - **test_images(folder):**  Contains some test images to test out our algorithm.  
+ > - **output(folder):** Contains the resultant images got from the model.
 
-Based on the proportions of these lines face shape is calculated.
-Even the angle of jaw is calculated. 
+ > - **output(folder):** Contains all the output that we got from the trained model. Outputs contain-
+ >
+ > - **detect_face_shape.py**: By placing all the images in our `test_images` folder, this script analyze all the images and save the output in `output` folder.
+ > - **detect_face_shape_single.py**: Given a single image from our `test_images` folder, this script analyze that particular image and save the output in `output` folder.
 
-The accuracy of the result is highly subjective.
+>
+### __Instructions:__
+
+> Before starting we need to satisfy all the dependencies. For that reason need to execute the following command. (All the commands need to be executed from the root folder)
+>
+> - __Install the dependencies:__  
+>> `pip install -r requirements.txt`  
+
+> To detect facial shapes from multiple images at once, run the following command:
+>
+> >`python detect_face_shape.py`  
+
+> To detect facial shape from a single image, run the following command:  
+>> `python detect_face_shape_single.py --input_path test_images/<img_name>.jpg --display_output False`
+>
+>
+>>__**Example command:**__  
+>> `python detect_face_shape_single.py --input_path test_images/B1.jpg --display_output False`
+
+>
+
+__Resultant image from our algorithm:__
+
+![Pear shaped face](.\output\result_B1.png)
+
