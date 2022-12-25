@@ -545,4 +545,4 @@ if __name__ == '__main__':
 
     for img_path in images:
         print(img_path)
-        detect_face_shape(input_path=img_path, display_output=True)
+        detect_face_shape(input_path=img_path, display_output=False)
